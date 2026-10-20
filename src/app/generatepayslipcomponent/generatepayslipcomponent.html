@@ -1,0 +1,52 @@
+
+
+<div class="main">
+<div class="noarea">
+<input type="month"  [(ngModel)]="selectmonth">
+
+<input type="number"  [(ngModel)]="leavecount">
+
+
+<button type="button" class="calculate" (click)="calculate()">CALCULATE</button>
+
+</div>
+
+<div class="printarea">
+
+<h1 >EMPLOYEE PAYSLIP</h1>
+
+MONTH:  {{selectmonth}}<br><br>
+
+EMPLOYEE ID:  {{searchemployee.employeeid}}<br><br>
+
+EMPLOYEE NAME:  {{searchemployee.name}}<br><br>
+
+DESIGNATION:  {{searchemployee.designation}}<br><br>
+
+LEAVE COUNT:  {{leavecount}}<br><br>
+
+BASIC SALARY:  {{searchemployee.basicsalary}}<br><br>
+
+HRA:  {{hraamount}}<br><br>
+
+DA: {{daamount}} <br><br>
+
+OTHER ALLOWANCES:{{allowances}} <br><br> 
+
+GROSS SALARY:{{grosssalary}} <br><br> 
+
+ESI: {{esiamount}} <br><br>
+
+PF: {{pfamount}} <br><br>
+
+LEAVE DEDUCTION: {{leavededuction}}<br><br>  
+
+TOTAL DEDUCTION: {{totaldeduction}}<br><br> 
+
+NET SALARY: {{netsalary}} <br><br>
+
+<button type="button"  (click)="print()"  class="noarea2">PRINT</button>
+
+
+</div>
+</div>

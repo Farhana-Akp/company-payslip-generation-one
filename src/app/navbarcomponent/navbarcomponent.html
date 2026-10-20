@@ -1,0 +1,22 @@
+
+
+
+
+
+<nav>
+
+<a routerLink="/homepage"  fragment="home">Home</a>
+
+<a routerLink="/homepage" fragment="about">About</a>
+<a routerLink="/homepage" fragment="service">Service</a>
+
+
+
+<button type="button"  (click)="logoutadmin()" *ngIf="isadminpage">LOGOUT</button>
+
+<button type="button"  (click)="logoutuser()" *ngIf="isuserpage">LOGOUT</button>
+
+</nav>
+
+
+

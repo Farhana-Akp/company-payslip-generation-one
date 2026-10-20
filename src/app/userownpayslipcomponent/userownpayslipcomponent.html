@@ -1,0 +1,46 @@
+    
+    
+
+    <input type="text"  [formControl]="search"   placeholder="enter month">
+    <table  border="2">
+    <tr>
+
+        <th>MONTH</th>
+        <th>USER ID</th>
+        <th>NAME</th>
+        <th>DESIGNATION</th>
+        <th>BASIC SALARY</th>
+        <th>HRA</th>
+        <th>DA</th>
+        <th>OTHER ALLOWANCES</th>
+        <th>GROSS SALARY</th>
+        <th>ESI</th>
+        <th>PF</th>
+        <th>LEAVE DEDUCTION</th>
+        <th>TOTAL DEDUCTION</th>
+        <th>NET SALARY</th>
+
+
+    </tr>
+    <tr *ngFor="let item of  textsearch">
+
+        <td>{{item.month}}</td>
+        <td>{{item.userid}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.designation}}</td>
+        <td>{{item.basicsalary}}</td>
+        <td>{{item.hra}}</td>
+        <td>{{item.da}}</td>
+        <td>{{item.otherallowences}}</td>
+        <td>{{item.grosssalary}}</td>
+        <td>{{item.esi}}</td>
+        <td>{{item.pf}}</td>
+        <td>{{item.leavededuction}}</td>
+        <td>{{item.totaldeduction}}</td>
+        <td>{{item.netsalary}}</td>
+
+    </tr>
+
+
+
+

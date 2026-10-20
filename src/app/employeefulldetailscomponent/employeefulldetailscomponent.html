@@ -1,0 +1,49 @@
+<app-sidebarcomponent  clas="side"
+ [employeelistlink]="true"
+ [adminprofile]="true">
+ </app-sidebarcomponent>
+
+
+
+<table border="2">
+    <tr>
+        <th>NAME</th>
+        <th>EMPLOYEE ID</th>
+        <th>DESIGNATION</th>
+        <th>JOINING DATE</th>
+        <th>BASIC SALARY</th>
+        <th>HRA</th>
+        <th>DA</th>
+        <th>OTHER ALLOWANCES</th>
+        <th>ESI</th>
+        <th>PF</th>
+
+    </tr>
+    <tr *ngFor="let item of  getdetails">
+
+        <th>{{item.name}}</th>
+        <th>{{item.employeeid}}</th>
+        <th>{{item.designation}}</th>
+        <th>{{item.joiningdate|date:'dd/MM/yyyy'}}</th>
+        <th>{{item.basicsalary}}</th>
+        <th>{{item.hra}}</th>
+        <th>{{item.da}}</th>
+        <th>{{item.otherallowences}}</th>
+        <th>{{item.esi}}</th>
+        <th>{{item.pf}}</th>
+
+        <th><button type="button" class="generate" (click)="generate(item.id)">GENERATE PAYSLIP</button></th>
+        <th><button type="button" class="edit" (click)="edit(item.id)">EDIT</button></th>
+        <th><button type="button" class="delete" (click)="delete(item.id)">DELETE</button></th>
+
+    </tr>
+
+
+
+
+
+</table>
+
+
+
+<button type="button" (click)="add()" class="add">ADD</button>

@@ -1,0 +1,25 @@
+
+
+.side {
+
+  position: fixed;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  gap: 40px;
+}
+
+
+.side a {
+  display: block;
+  color: aliceblue;
+  text-decoration: none;
+  padding: 10px;
+}
+.side a:hover
+{
+  color: rgb(131, 231, 155);
+
+}

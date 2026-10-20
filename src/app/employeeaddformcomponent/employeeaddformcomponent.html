@@ -1,0 +1,58 @@
+
+
+
+<form  [formGroup]="addform"  (ngSubmit)="submit()">
+
+<h1>ADD EMPLOYEE DATA</h1>
+
+<div class="formgroup">
+<label>NAME</label>
+
+<input type="text"  formControlName="name"  placeholder="name"></div><br><br>
+
+
+
+<div class="formgroup">
+<label>EMPLOYEE ID</label>
+
+<input type="number"  formControlName="employeeid"  placeholder="employeeid"></div><br><br>
+
+<div class="formgroup">
+<label>DESIGNATION</label>
+<input type="text"  formControlName="designation"  placeholder="designation"></div><br><br>
+
+<div class="formgroup">
+<label>JOINING DATE</label>
+<input type="date"  formControlName="joiningdate"  placeholder="date"></div><br><br>
+
+<div class="formgroup">
+<label>BASIC SALARY</label>
+<input type="number"  formControlName="basicsalary"  placeholder="basicsalary"></div><br><br>
+
+
+<div class="formgroup">
+<label>HRA</label>
+<input type="number"  formControlName="hra"  placeholder="%"></div><br><br>
+
+<div class="formgroup">
+<label>DA</label>
+<input type="number"  formControlName="da"  placeholder="%"></div><br><br>
+
+<div class="formgroup">
+<label>OTHER ALLOWANCES</label>
+<input type="number"  formControlName="otherallowences"  placeholder="%"></div><br><br>
+
+<div class="formgroup">
+<label>ESI</label>
+<input type="number"  formControlName="esi"  placeholder="%"></div><br><br>
+
+<div class="formgroup">
+<label>PF</label>
+<input type="number"  formControlName="pf"  placeholder="%"></div><br><br>
+
+
+
+<button type="submit" [disabled]="addform.invalid">ADD</button>
+
+
+</form>

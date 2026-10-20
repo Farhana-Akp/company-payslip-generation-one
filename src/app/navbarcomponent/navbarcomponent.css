@@ -1,0 +1,42 @@
+
+
+
+
+
+nav a
+{
+    color: rgb(252, 251, 251);
+    gap: 20px;
+    padding: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+nav a:hover
+{
+color: rgb(131, 231, 155);
+}
+nav button
+{
+    margin-right: 20px;
+}
+
+
+button{
+
+    background: rgb(172, 172, 237);
+    color: aliceblue;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 150px;
+    height: 30px;
+    font-weight: bold;
+}
+button:hover{
+
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}

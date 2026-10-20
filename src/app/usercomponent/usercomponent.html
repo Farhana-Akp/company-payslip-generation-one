@@ -1,0 +1,22 @@
+
+
+
+
+<h1>PROFILE</h1>
+
+
+<div  class="pro" *ngIf="getemail">
+
+
+   ID:   {{getemail?.id}}<br><br>
+
+   NAME:   {{getemail?.name}}<br><br>
+
+   EMAIL:   {{getemail?.email}}<br><br>
+
+
+</div>
+
+
+<button type="button"  (click)="payslip(getemail.id)">MY PAYSLIP DETAILS</button>
+

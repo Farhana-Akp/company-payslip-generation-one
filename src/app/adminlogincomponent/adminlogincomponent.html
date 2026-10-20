@@ -1,0 +1,34 @@
+
+
+<div class="main">
+<form  [formGroup]="addform"  (ngSubmit)="submit()">
+
+<h1>LOGIN</h1>
+
+<div class="formgroup">
+<label>EMAIL</label>
+
+<input type="email"  formControlName="email"  placeholder="email">
+<div *ngIf="addform.get('email')?.touched&&addform.get('email')?.errors?.['required']">
+    invalid email*
+</div>
+</div><br><br>
+
+<div class="formgroup">
+
+<label>PASSWORD</label>
+
+<input type="password"  formControlName="password"  placeholder="password">
+<div *ngIf="addform.get('password')?.touched&&addform.get('password')?.errors?.['required']">
+    invalid password*
+    </div>
+</div><br><br>
+
+<div class="formgroup">
+
+<button type="submit" [disabled]="addform.invalid">LOGIN</button>
+</div>
+
+
+</form>
+</div>

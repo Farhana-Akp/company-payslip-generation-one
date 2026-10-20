@@ -1,0 +1,106 @@
+
+
+
+.side{
+
+   gap: 40px;
+    
+}
+
+:host {
+    display: block;
+ margin-top: 0px;
+   background: white;
+    min-height: calc(100vh - 60px);
+    background-image:url("/payslip.png");
+       background-size:100px auto;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+
+table{
+
+    margin-top: 60px;
+    margin-left: 70px;
+    z-index: 1;
+}
+th,
+td {
+    padding: 10px 15px;
+}
+
+.add
+{
+   margin-left: 600px;
+   margin-top: 10px;
+   color: white;
+   background: #072a3d;
+   width: 100px;
+   margin-top: 20px;
+   border-radius: 20px;
+   height: 50px;
+   cursor: pointer;
+
+}
+.add:hover{
+
+   background: white;
+   color: black;
+   font-weight: bold;
+}
+.generate
+{
+
+   border-radius: 20px;
+   background: green;
+   color: white;
+   width: 100px;
+   height: 50px;
+   cursor: pointer;
+}
+.generate:hover{
+
+    background: white;
+   color: black;
+      font-weight: bold;
+
+}
+
+.edit
+{
+
+   border-radius: 20px;
+   background: rgb(244, 163, 13);
+   color: white;
+   width: 100px;
+   height: 50px;
+      cursor: pointer;
+
+}
+.edit:hover{
+
+    background: white;
+   color: black;
+      font-weight: bold;
+
+}
+
+.delete
+{
+
+   border-radius: 20px;
+   background: rgb(253, 45, 4);
+   color: white;
+   width: 100px;
+   height: 50px;
+      cursor: pointer;
+
+}
+.delete:hover{
+
+    background: white;
+   color: black;
+      font-weight: bold;
+
+}
